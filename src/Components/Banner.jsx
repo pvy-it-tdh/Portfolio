@@ -1,8 +1,8 @@
-import {AiFillGithub} from 'react-icons/ai'
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import img from "../assets/a.jpg"
+import profileImage from "./images/profile.jpg"; // Corrected import
 
 const Banner = () => {
   return (
@@ -12,9 +12,9 @@ const Banner = () => {
           Welcome To <span className="text-fuchsia-500">My Website </span>
         </h1>
         <p>
-          Code dạy ta học Bug dạy ta khôn!! Tôi là một người code rất hay bị
-          bug😥 nhưng sau khi bị bug bạn nhận ra được điều và học được điều gì
-          sau khi fix được con bug đó😅
+          Code dạy ta học Bug dạy ta khôn!! Tôi là một người code rất hay bị bug
+          nhưng sau khi bị bug bạn nhận ra được điều và học được điều gì sau khi
+          fix được con bug đó
         </p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
@@ -47,9 +47,14 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <img src='img' width={290} height={290} className='' alt="" />
+      <img
+        src={profileImage}
+        className="rounded-full border-2 p-1 "
+        alt=""
+        style={{ width: "290px", height: "290px", borderRadius: "50%", objectFit:'cover'}}
+      />
     </div>
   );
-}
+};
 
-export default Banner
+export default Banner;
