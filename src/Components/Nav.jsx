@@ -15,27 +15,27 @@ const Nav = () => {
         <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end lg:font-normal">
           <ul className="flex gap-8 mr-16 text-base">
             <Link spy={true} smooth={true} to="Home">
-              <li className="hover:text-fuchsia-600 transition cursor-pointer">
+              <li className="hover:text-blue-400 transition cursor-pointer">
                 Home
               </li>
             </Link>
             <Link spy={true} smooth={true} to="About">
-              <li className="hover:text-fuchsia-600 transition cursor-pointer">
+              <li className="hover:text-blue-400 transition cursor-pointer">
                 About
               </li>
             </Link>
             <Link spy={true} smooth={true} to="Services">
-              <li className="hover:text-fuchsia-600 transition cursor-pointer">
+              <li className="hover:text-blue-400 transition cursor-pointer">
                 Services
               </li>
             </Link>
             <Link spy={true} smooth={true} to="Projects">
-              <li className="hover:text-fuchsia-600 transition cursor-pointer">
+              <li className="hover:text-blue-400 transition cursor-pointer">
                 Projects
               </li>
             </Link>
             <Link spy={true} smooth={true} to="Contact">
-              <li className="hover:text-fuchsia-600 transition cursor-pointer">
+              <li className="hover:text-blue-400 transition cursor-pointer">
                 Contact
               </li>
             </Link>
