@@ -32,26 +32,31 @@ const Banner = () => {
           <div className="flex items-center justify-center">
             <div className="flex space-x-2">
               <a
-                href=""
+                href="https://github.com/pvy-it-tdh"
                 className="text-blue-400 hover:text-blue-300 rounded-full glow p-2"
+                target="_blank"
               >
                 <AiFillGithub className="text-[28px]" />
               </a>
               <a
-                href=""
+                href="https://www.linkedin.com/in/ph%C3%BAc-vy-l%C3%AA-th%E1%BA%A1ch-645b882ab/"
                 className="text-blue-400 hover:text-blue-300 rounded-full glow p-2"
+                target="_blank"
               >
                 <FaLinkedin className="text-[28px]" />
               </a>
               <a
-                href=""
+                href="https://www.facebook.com/profile.php?id=100076464913673"
                 className="text-blue-400 hover:text-blue-300 rounded-full glow p-2"
+                target="_blank"
+                
               >
                 <FaFacebookSquare className="text-[28px]" />
               </a>
               <a
-                href=""
+                href="https://www.instagram.com/phucvy.vyphuc/"
                 className="text-blue-400 hover:text-blue-300 rounded-full glow p-2"
+                target="_blank"
               >
                 <FaInstagram className="text-[28px]" />
               </a>
