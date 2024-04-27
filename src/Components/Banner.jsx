@@ -23,11 +23,7 @@ const Banner = () => {
         >
           Welcome To <span className="text-blue-400">My Website </span>
         </h1>
-        <p data-aos="fade-left">
-          Code dạy ta học Bug dạy ta khôn!! Tôi là một người code rất hay bị bug
-          nhưng sau khi bị bug bạn nhận ra được điều và học được điều gì sau khi
-          fix được con bug đó
-        </p>
+        <p data-aos="fade-left" className="text-[25px]">Here is some information about me.</p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2">
@@ -49,7 +45,6 @@ const Banner = () => {
                 href="https://www.facebook.com/profile.php?id=100076464913673"
                 className="text-blue-400 hover:text-blue-300 rounded-full glow p-2"
                 target="_blank"
-                
               >
                 <FaFacebookSquare className="text-[28px]" />
               </a>
