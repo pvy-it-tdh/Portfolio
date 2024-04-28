@@ -36,6 +36,7 @@ const About = () => {
             width: "290px",
             height: "290px",
             objectFit: "cover",
+            borderRadius:"50% "
           }}
         />
       </div>

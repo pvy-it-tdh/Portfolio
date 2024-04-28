@@ -10,10 +10,10 @@ const Services = () => {
       id="Services"
       className="p-20 flex flex-col items-center justify-center"
     >
-      <h1 className="text-[52px] font-semibold mb-20 leading-normal text-blue-400 text-center">
+      <h1 data-aos="fade-down" className="text-[52px] font-semibold mb-20 leading-normal text-blue-400 text-center">
         Services
       </h1>
-      <div className="flex flex-wrap justify-center flex-column">
+      <div data-aos="fade-up" className="flex flex-wrap justify-center flex-column">
         <img src={HTMLImage} alt="HTML5 Logo" className="service-image" />
         <img src={CSSImage} alt="CSS Logo" className="service-image" />
         <img src={JS} alt="JavaScript Logo" className="service-image" />

@@ -1,9 +1,10 @@
+import { useState } from "react";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedin, FaFacebookSquare, FaInstagram } from "react-icons/fa";
-import profileImage from "./images/profile.jpg";
+import computer from "./images/computer.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import  { useEffect } from "react";
+import { useEffect } from "react";
 
 const Banner = () => {
   useEffect(() => {
@@ -14,6 +15,8 @@ const Banner = () => {
     });
   }, []);
 
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <div className="lg:px-56 px-10 lg:py-0 py-20 text-center gap-5 lg:text-start flex lg:flex-row flex-col-reverse justify-between lg:gap-28 items-center">
       <div className="h-full lg:py-40 flex flex-col justify-center lg:items-start items-center text-white">
@@ -23,7 +26,9 @@ const Banner = () => {
         >
           Welcome To <span className="text-blue-400">My Website </span>
         </h1>
-        <p data-aos="fade-left" className="text-[25px]">Here is some information about me.</p>
+        <p data-aos="fade-left" className="text-[25px]">
+          Here is some information about me.
+        </p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">
             <div className="flex space-x-2">
@@ -60,16 +65,21 @@ const Banner = () => {
         </div>
       </div>
       <img
-        src={profileImage}
-        className="rounded-full border-2 p-1"
+        src={computer}
+        className="rounded-full border-2 p-1 computer-img"
         alt=""
         data-aos="fade-up"
         style={{
-          width: "290px",
-          height: "290px",
-          borderRadius: "50%",
+          width: "290px", // Giữ chiều rộng là 290px
+          height: "290px", // Đặt chiều cao là 290px để tạo thành khung vuông
           objectFit: "cover",
+          transition: "transform 0.3s ease-in-out",
+          boxShadow: isHovered ? "0 0 15px rgb(63, 114, 165)" : "none",
+          transform: isHovered ? "scale(1.5)" : "scale(1)",
+          borderRadius:"0"
         }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
       />
     </div>
   );
