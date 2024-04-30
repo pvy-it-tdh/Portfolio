@@ -24,10 +24,11 @@ const Banner = () => {
           data-aos="fade-right"
           className="text-[52px] font-semibold mb-8 leading-normal"
         >
-          Welcome To <span className="text-blue-400">My Website </span>
+          Hi I'm <span className="text-blue-400">Phuc Vy </span>
         </h1>
         <p data-aos="fade-left" className="text-[25px]">
-          Here is some information about me.
+
+          I am a student of PTIT. Here is some information about me.
         </p>
         <div className="flex mt-8 gap-2">
           <div className="flex items-center justify-center">

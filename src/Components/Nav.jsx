@@ -10,7 +10,7 @@ const Nav = () => {
     <nav>
       <div className="h-10vh flex justify-between z-50 text-white lg:py-5 px-20 py-4 border-b border-slate-800">
         <div className="flex items-center flex-1">
-          <span className="text-3xl font-bold">Logo</span>
+          <span className="text-3xl font-bold">Portfolio</span>
         </div>
         <div className="hidden lg:flex lg:items-center lg:flex-1 lg:justify-end lg:font-normal">
           <ul className="flex gap-8 mr-16 text-base">
@@ -27,11 +27,6 @@ const Nav = () => {
             <Link spy={true} smooth={true} to="Services">
               <li className="hover:text-blue-400 transition cursor-pointer">
                 Services
-              </li>
-            </Link>
-            <Link spy={true} smooth={true} to="Projects">
-              <li className="hover:text-blue-400 transition cursor-pointer">
-                Projects
               </li>
             </Link>
             <Link spy={true} smooth={true} to="Contact">
