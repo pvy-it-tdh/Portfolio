@@ -15,7 +15,7 @@ const About = () => {
           >
             About Me
           </h1>
-          <p data-aos="fade-left" className="text-[20px]">
+          <p data-aos="fade-left" className="text-[20px] ">
             I am a passionate learner, always eager to acquire new knowledge.
             Currently, I am seeking an internship as a full-stack developer to
             apply my existing skills, gain new insights, and immerse myself in a
